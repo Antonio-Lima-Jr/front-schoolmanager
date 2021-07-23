@@ -6,6 +6,9 @@ const routes: Routes = [
   {
     path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   },
+  {
+    path: 'aluno', loadChildren: () => import('./aluno/aluno.module').then(m => m.AlunoModule)
+  },
   { path: '**', redirectTo: 'login', pathMatch: 'full' },
 ];
 
